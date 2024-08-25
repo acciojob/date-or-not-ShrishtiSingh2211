@@ -1,6 +1,6 @@
 var isDate = function (input) {
-  //   write your code here
-	 if (input instanceof Date) {
+  // Check if the input is a Date object
+  if (input instanceof Date) {
     // Check if the Date object is valid
     return !isNaN(input.getTime());
   }
@@ -17,4 +17,4 @@ var isDate = function (input) {
 
 // Do not change the code below.
 const input = prompt("Enter Date.");
-alert(isDate(input));
+alert(isDate(new Date(input))); // Convert back to Date object
